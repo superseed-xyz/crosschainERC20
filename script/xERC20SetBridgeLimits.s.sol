@@ -27,8 +27,8 @@ contract XERC20SetBridgeLimits is Script {
     _tokens[5330] = CrosschainERC20(0xFED85A05C1eeDEae2280777334D34b890b6381e2);
     _bridgeParams[5330] =
       BridgeLimits({_minterLimits: new uint256[](1), _burnerLimits: new uint256[](1), _bridges: new address[](1)});
-    _bridgeParams[5330]._minterLimits[0] = 500_000_000 * 1e18;
-    _bridgeParams[5330]._burnerLimits[0] = 500_000_000 * 1e18;
+    _bridgeParams[5330]._minterLimits[0] = 0;
+    _bridgeParams[5330]._burnerLimits[0] = 10_000_000_000 * 1e18;
     _bridgeParams[5330]._bridges[0] = 0xA1863B4b02b7DCd7429F62C775816328D63020F4;
 
     // Mainnet
